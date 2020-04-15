@@ -6,6 +6,7 @@
   "author": "Kris <kriskuiper74@gmail.com>",
   "license": "MIT",
   "scripts": {
+		"prebuild": "rimraf dist",
     "build": "run-s build:*",
     "build:static": "ncp src/static dist",
     "build:js": "rollup -c"
@@ -13,6 +14,7 @@
   "devDependencies": {
     "ncp": "^2.0.0",
     "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
     "rollup": "^2.3.4"
   }
 }
