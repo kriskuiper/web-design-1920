@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.message-block {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  width: 55%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message-block.is-visible {
+  opacity: 1;
+}
+
+.message-block--left {
+  margin-right: auto;
+}
+
+.message-block--right {
+  margin-left: auto;
+}
+
+.word-block {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  margin-right: 3px;
+}
+
+.word-block.is-visible {
+  opacity: 1;
+}
