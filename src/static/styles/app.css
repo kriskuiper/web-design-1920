@@ -22,6 +22,8 @@
 :root {
 	--font-stack-body: 'Merriweather', Georgia, serif;
 	--font-stack-titles: 'Open Sans', Helvetica, Arial, sans-serif;
+
+	--color-green: #8EF0BC;
 }
 
 * {
@@ -29,23 +31,50 @@
 }
 
 body {
-  font-family: var(--font-stack-body);
+	font-family: var(--font-stack-body);
+	margin: 0;
 }
 
 h1, h2, h3, h4 {
 	font-family: var(--font-stack-titles);
 	font-weight: 700;
+	margin: 0;
+}
+
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.app-header {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid black;
 }
 
 .message-block {
+  width: 70%;
+  display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	margin: 20px 0;
   border: 1px solid;
   border-radius: 5px;
-  padding: 10px;
-  width: 55%;
   opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-  display: flex;
-  flex-wrap: wrap;
+	transition: opacity 0.2s ease-in-out;
+	background: var(--color-green);
+	position: relative;
+}
+
+.message-block::after {
+	content: "";
+	position: absolute;
+	background: #eee;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .message-block.is-visible {
@@ -53,11 +82,23 @@ h1, h2, h3, h4 {
 }
 
 .message-block--left {
-  margin-right: auto;
+	margin-right: auto;
+	margin-left: 30px;
+	padding-left: 40px;
+}
+
+.message-block--left::after {
+	left: -30px;
 }
 
 .message-block--right {
-  margin-left: auto;
+	margin-left: auto;
+	margin-right: 30px;
+	padding-right: 40px;
+}
+
+.message-block--right::after {
+	right: -30px;
 }
 
 .word-block {
@@ -68,4 +109,10 @@ h1, h2, h3, h4 {
 
 .word-block.is-visible {
 	color: rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 980px) {
+	.messages {
+		padding: 0 10px;
+	}
 }
