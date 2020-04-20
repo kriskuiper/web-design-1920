@@ -224,11 +224,6 @@ export default [
 	{
 		alignment: 'left',
 		type: 'host',
-		content: 'Met enige spanning in mijn lijf...'
-	},
-	{
-		alignment: 'left',
-		type: 'host',
 		content: '... kom ik aan...'
 	},
 	{
