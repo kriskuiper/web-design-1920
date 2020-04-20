@@ -1,4 +1,4 @@
-const WORD_TIMEOUT = 300;
+const WORD_TIMEOUT = 200;
 
 export function createMessageBlock(alignment, content) {
 	const $messageBlock = document.createElement("p");
@@ -24,7 +24,7 @@ export function createMessageBlock(alignment, content) {
 	return $messageBlock;
 }
 
-export function showMessage($container, transcript, index) {
+export function showMessage($container, transcript, index, state) {
 	const { content, alignment } = transcript[index];
 	const words = content.split(' ');
 	const timeout = words.length * WORD_TIMEOUT;
@@ -33,9 +33,11 @@ export function showMessage($container, transcript, index) {
 	$messageBlock.classList.add('is-visible');
 	$container.appendChild($messageBlock);
 
+	$messageBlock.scrollIntoView();
+
 	index++;
 
-	if (index !== transcript.length) {
+	if (index !== transcript.length && state !== 'paused') {
 		return setTimeout(() => {
 			showMessage($container, transcript, index);
 		}, timeout + 500);
