@@ -31,6 +31,7 @@ export function showMessages($container, messages) {
 
 			$container.appendChild($messageBlock);
 			$messageBlock.classList.add("is-visible");
+			$messageBlock.scrollIntoView();
 
     }, 2000 * messageIndex);
   }
