@@ -1,12 +1,16 @@
 const WORD_TIMEOUT = 200;
 
-export function createMessageBlock(alignment, content) {
+export function createMessageBlock(alignment, content, showAvatar) {
 	const $messageBlock = document.createElement("p");
 
   const words = content.split(' ');
 
   $messageBlock.classList.add("message-block");
-  $messageBlock.classList.add(`message-block--${alignment}`);
+	$messageBlock.classList.add(`message-block--${alignment}`);
+
+	if (showAvatar) {
+		$messageBlock.classList.add(`is-introduced`);
+	}
 
   for (const wordIndex in words) {
     const $wordBlock = document.createElement("span");
@@ -25,11 +29,11 @@ export function createMessageBlock(alignment, content) {
 }
 
 export function showMessage($container, transcript, index, state) {
-	const { content, alignment } = transcript[index];
+	const { content, alignment, showAvatar } = transcript[index];
 	const words = content.split(' ');
 	const timeout = words.length * WORD_TIMEOUT;
 
-	const $messageBlock = createMessageBlock(alignment, content);
+	const $messageBlock = createMessageBlock(alignment, content, showAvatar);
 	$messageBlock.classList.add('is-visible');
 	$container.appendChild($messageBlock);
 

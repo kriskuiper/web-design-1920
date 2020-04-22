@@ -120,12 +120,14 @@ button:active {
 .message-block::after {
 	content: "";
 	position: absolute;
-	background: #eee;
+	background: #444;
 	border-radius: 50%;
 	width: 60px;
 	height: 60px;
 	top: 50%;
 	transform: translateY(-50%);
+	background-size: cover;
+	background-position: center center;
 }
 
 .message-block.is-visible {
@@ -138,8 +140,13 @@ button:active {
 	padding-left: 40px;
 }
 
+
 .message-block--left::after {
 	left: -30px;
+}
+
+.message-block--left.is-introduced::after {
+	background-image: url('../images/cas-de-jong.jpg');
 }
 
 .message-block--right {
@@ -150,6 +157,10 @@ button:active {
 
 .message-block--right::after {
 	right: -30px;
+}
+
+.message-block--right.is-introduced::after {
+	background-image: url('../images/wesley-zippro.jpg');
 }
 
 .word-block {

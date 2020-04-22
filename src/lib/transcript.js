@@ -75,8 +75,14 @@ export default [
 	{
 		alignment: 'left',
 		type: 'host',
-		content: '16 jaar is hij pas... als hij bij een brute roofmoord een man met maar liefst 10 messteken om het leven brengt.',
+		content: '16 jaar is hij pas...',
 		showAvatar: true,
+	},
+	{
+		alignment: 'left',
+		type: 'host',
+		content: '... als hij bij een brute roofmoord een man met maar liefst 10 messteken om het leven brengt.',
+		showAvatar: true
 	},
 	{
 		alignment: 'left',
@@ -165,7 +171,7 @@ export default [
 	{
 		alignment: 'left',
 		type: 'host',
-		content: '... toen nog een 16-jarige puber.',
+		content: '... was toen nog maar een 16-jarige puber.',
 		showAvatar: true,
 	},
 	{
@@ -219,7 +225,7 @@ export default [
 	{
 		alignment: 'right',
 		type: 'guest',
-		content: '📞: Toen had ik een beledigend berichtje ingesproken en dat was een schending van de voorwaarden...',
+		content: '📞: Ik had een beledigend berichtje ingesproken en dat was een schending van de voorwaarden...',
 		showAvatar: true,
 	},
 	{
@@ -231,7 +237,7 @@ export default [
 	{
 		alignment: 'right',
 		type: 'guest',
-		content: '📞: Uiteindelijk heb ik daarvoor 40 dagen gezeten in Arnhem ja.',
+		content: '📞: Uiteindelijk heb ik daarvoor 40 dagen gezeten in Arnhem.',
 		showAvatar: true,
 	},
 	{
