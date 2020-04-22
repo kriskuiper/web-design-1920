@@ -1,4 +1,4 @@
-const WORD_TIMEOUT = 200;
+const WORD_TIMEOUT = 215;
 
 export function createMessageBlock(alignment, content, showAvatar) {
 	const $messageBlock = document.createElement("p");
@@ -44,7 +44,7 @@ export function showMessage($container, transcript, index, state) {
 	if (index !== transcript.length && state !== 'paused') {
 		return setTimeout(() => {
 			showMessage($container, transcript, index);
-		}, timeout + 500);
+		}, timeout + 600);
 	}
 }
 
