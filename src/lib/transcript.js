@@ -16,14 +16,14 @@ export default [
 	{
 		alignment: 'right',
 		type: 'guest',
-		content: 'Een zaak van dood door schuld',
+		content: 'Een zaak van dood door schuld.',
 		showAvatar: false,
 		avatar: ''
 	},
 	{
 		alignment: 'right',
 		type: 'guest',
-		content: 'Een vrouw is overleden bij een mislukte tasjes roof doordat ze viel',
+		content: 'Een vrouw is overleden bij een mislukte tasjes roof doordat ze viel.',
 		showAvatar: false,
 		avatar: ''
 	},
@@ -44,7 +44,7 @@ export default [
 	{
 		alignment: 'right',
 		type: 'guest',
-		content: '...omdat dat niet de bedoeling was, het was meer een ongeluk',
+		content: '...omdat dat niet de bedoeling was, het was meer een ongeluk.',
 		showAvatar: false,
 		avatar: ''
 	},
