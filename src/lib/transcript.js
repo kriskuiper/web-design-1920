@@ -63,7 +63,7 @@ export default [
 	{
 		alignment: 'left',
 		type: 'host',
-		content: 'De persoon aan de andere kant is Wesley Tzipro, 39 jaar oud...',
+		content: 'De persoon aan de andere kant is Wesley Zippro, 39 jaar oud...',
 		showAvatar: true,
 	},
 	{
