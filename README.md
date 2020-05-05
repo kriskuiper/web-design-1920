@@ -42,7 +42,7 @@ The final prototype looked like this:
 You can find it [here](https://web-design-1920.now.sh/).
 
 The only feedback Marie had for my prototype is that she thought it was awesome and that she learns a lot from focussing on the intonation. She literally said:
-> "I didn't think people spoke like that, nice."
+> "I didn't know people spoke like that, nice."
 
 [You can read all about the tests in the Wiki]()
 
