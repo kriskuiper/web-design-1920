@@ -74,5 +74,3 @@ To level up the experience above just functional you can come up with nonsensica
 
 #### How I implemented it
 At first I thought it should be clear from the start to Marie who's speaking in the podcast. But then I thought: "What if I just show the images of the persons after they are introduced in the podcast?" Since when we listen to the podcast we mostly know who's speaking after they are introduced, then we can Google them etc. So that was exactly what I did to add an extra dimension to the otherwise pretty dull text.
-
-## Conclusion
