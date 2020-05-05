@@ -8,22 +8,22 @@ Marie identifies herself as Deaf, that does not only mean that she's litteraly d
 
 ## Headlines from the user tests / interviews
 ### Test 1
-<figure>
-	<img src="">
-	<figcaption>The first scetch from which I explained how a prototype could work</figcaption>
-</figure>
+![First concept sketch](assets/concept-sketch.jpg)
 
 The first test / interview was all about getting to know Marie. Here are some notes that stood out to me while attending the meeting:
 - Unless it's very clear what colors express certain emotions you have to watch out with color-coding emotions;
 - She doesn't know if she likes text to be visible all at once or word by word so that is something I'll have to build both ways for the first prototype;
 - Soundwaves don't mean anything to Marie, but rythm could be something valuable (maybe show the words at speaking speed?)
-- 
 
 And so for the second test I decided to build two minor prototypes in CodeSandbox, just to test her preference for showing text block by block or word by word. You can see them here:
 1. [Showing text block by block](https://owg73.csb.app/)
 2. [Showing text word by word](https://090c1.csb.app/)
 
 ### Test 2
+![Simple prototype](assets/simple-test.png)
+
+I wanted to know what Marie preferred so therefore I created the two prototypes above, just to validate her preference.
+
 - Marie still doesn't have a clear preference about incoming messages, I therefore chose to come up with a different solution as you can see in the image below;
 - Reinier's prototype shows the whole text, but opaque, the spoken text gets an opacity of 1 when it is spoken; This way Marie can still see the whole text and also the rhythm of how something is spoken;
 - Marie mostly uses her mobile so the design should be **mobile first**;
@@ -41,7 +41,7 @@ The final prototype looked like this:
 
 You can find it [here](https://web-design-1920.now.sh/).
 
-The only feedback Marie had for my prototype is that she thought it was awesome and that she learns a lot from focussing on the intonation. She literally said:
+The only feedback Marie had for my prototype is that she thought it was awesome and that she learns a lot from focussing on intonation. She literally said:
 > "I didn't know people spoke like that, nice."
 
 [You can read all about the tests in the Wiki]()
