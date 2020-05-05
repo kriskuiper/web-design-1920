@@ -1,6 +1,8 @@
 # Web design 19-20
 > Building an application for one specific user and one specific context to understand how to build applications for people who are excluded by some defaults.
 
+![Homepage podcast](assets/podcast-voor-doven-homepage.png)
+
 ## About the test person: Marie
 <!-- Some info about Marie -->
 
@@ -42,3 +44,4 @@
 #### How I implemented it
 <!-- Describe how I implemented it -->
 
+## Conclusion
